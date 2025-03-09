@@ -1,0 +1,272 @@
+/* Global Styles for Dark Mode by Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Geist', sans-serif;
+    background-color: #181818;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    flex-direction: row;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  /* Google Embed Container */
+#googleEmbed iframe {
+    border-radius: 8px;
+    height: 800px;  /* Set the iframe height to take the full height of the middle column */
+    width: 600px;    /* Make sure the iframe takes the full width */
+  }
+  
+  /* Other Existing Styles (for context) */
+  .middle-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;  /* Set width to fit the middle column as per layout */
+    padding: 10px;
+  }
+  
+  
+  .left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+  }
+  
+  .card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card h1, .card h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .pomodoro-controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  button {
+    width: 48%;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  li {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    background-color: #444;
+  }
+  
+  .delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  #timer {
+    font-size: 5rem;  /* Increased font size for the timer */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #currentTime {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #brownNoise iframe {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  #darkModeToggle {
+    position: absolute;
+    top: 2wh;
+    left: 2vw; /* Move it to the left */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  #darkModeToggle:hover {
+    background-color: #444;
+  }
+  
+  /* Light Mode Styles */
+  .light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .light-mode .container {
+    background-color: #fff;
+  }
+  
+  .light-mode h1, .light-mode h2 {
+    color: #333;
+  }
+  
+  .light-mode li {
+    background-color: #f9f9f9;
+  }
+  
+  .light-mode .delete-btn {
+    background-color: #d9534f;
+  }
+  
+  .light-mode #timer {
+    color: #333;
+  }
+  
+  .light-mode #darkModeToggle {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Additional Styling for Card Light Mode */
+  .light-mode-card {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .light-mode-card h1, .light-mode-card h2 {
+    color: #333;
+  }
+  
+  .light-mode-card button {
+    background-color: #5cb85c;
+  }
+  
+  .light-mode-card ul li {
+    background-color: #f9f9f9;
+  }
+  
+  .light-mode-card .delete-btn {
+    background-color: #c9302c;
+  }
+  
+  /* Audio Player */
+  #audioPlayer iframe {
+    border-radius: 8px;
+    height: 90px;
+    width: 100%;
+  }
+  
+  /* Layout Enhancements */
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .middle-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #studyHub h1 {
+    font-size: 2rem;
+  }
+  
+  #studyHub {
+    margin-bottom: 20px;
+  }
+  
+  #timeDisplay {
+    font-size: 4rem;  /* Increased font size for the clock */
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #timer {
+    font-size: 5rem;  /* Larger timer */
+  }
+  
+  /* Dark Mode Local Time Styles */
+.dark-mode #timeDisplay {
+    color: #fff; /* White text in dark mode */
+  }
+  
+  .light-mode #timeDisplay {
+    color: #333; /* Dark text in light mode */
+  }
