@@ -1,4 +1,3 @@
-// Pomodoro Timer
 let pomodoroInterval;
 let pomodoroMinutes = 25;
 let pomodoroSeconds = 0;
@@ -46,7 +45,6 @@ function padTime(time) {
   return time < 10 ? `0${time}` : time;
 }
 
-// Current Local Time
 function updateTime() {
   const currentTime = new Date();
   const hours = padTime(currentTime.getHours());
@@ -57,7 +55,6 @@ function updateTime() {
 
 setInterval(updateTime, 1000);
 
-// To-Do List Functionality
 document.getElementById("addTaskBtn").addEventListener("click", function() {
   const taskInput = document.getElementById("taskInput");
   const taskText = taskInput.value.trim();
@@ -71,22 +68,19 @@ document.getElementById("addTaskBtn").addEventListener("click", function() {
       <button class="delete-btn">Delete</button>
     `;
 
-    // Add event listener for deleting tasks
     newTask.querySelector(".delete-btn").addEventListener("click", function() {
       taskList.removeChild(newTask);
     });
 
-    // Add event listener for marking tasks as completed
     newTask.addEventListener("click", function() {
       newTask.classList.toggle("completed");
     });
 
     taskList.appendChild(newTask);
-    taskInput.value = "";  // Clear the input field
+    taskInput.value = "";
   }
 });
 
-// Dark Mode Toggle
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
 const containers = document.querySelectorAll('.card');
